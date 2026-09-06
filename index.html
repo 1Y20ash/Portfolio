@@ -11,21 +11,8 @@
   <link rel="stylesheet" href="style.css" />
   <style>
     .photo-placeholder { overflow: hidden; }
-    .photo-placeholder .profile-photo {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      max-width: none;
-      max-height: none;
-      object-fit: cover;
-      object-position: center center;
-      display: block;
-      z-index: 1;
-      border-radius: inherit;
-      transform: scale(1.04);
-    }
-    .photo-placeholder .photo-ring { z-index: 2; pointer-events: none; }
+    .photo-placeholder .profile-photo { position:absolute; inset:0; width:100%; height:100%; max-width:none; max-height:none; object-fit:cover; object-position:center center; display:block; z-index:1; border-radius:inherit; transform:scale(1.04); }
+    .photo-placeholder .photo-ring { z-index:2; pointer-events:none; }
   </style>
 </head>
 <body>
@@ -51,10 +38,7 @@
       </div>
       <div class="hero-visual tilt-card hero-reveal" data-tilt>
         <div class="hero-grid"></div><div class="scan-line"></div>
-        <div class="photo-placeholder">
-          <div class="photo-ring"></div>
-          <img class="profile-photo" src="IMG-20260120-WA0002.jpg" alt="Yash Chitmalwar profile photo" />
-        </div>
+        <div class="photo-placeholder"><div class="photo-ring"></div><img class="profile-photo" src="IMG-20260120-WA0002.jpg" alt="Yash Chitmalwar profile photo" /></div>
         <div class="hero-chip chip-one float-chip">AI / ML</div><div class="hero-chip chip-two float-chip">SECURITY</div><div class="hero-chip chip-three float-chip">FULL STACK</div>
         <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
       </div>
@@ -80,26 +64,19 @@
       <div class="project-list">
         <article class="project-card featured tilt-card spotlight-card" data-tilt>
           <div class="project-meta"><span>01</span><span>SECURITY · DIGITAL FORENSICS · FULL STACK</span></div>
-          <div class="project-main">
-            <div class="project-kicker">FLAGSHIP PROJECT</div>
-            <h3>EVIDENTIA</h3>
-            <p>A case-centric Secure Digital Document Management System for legal and investigation-document workflows — evolved from encrypted cloud storage into a broader platform for protected documents, evidence, integrity, auditability and controlled access.</p>
-            <div class="tags"><span>AES-256-GCM</span><span>PBKDF2</span><span>Ed25519</span><span>RBAC</span><span>OCR</span><span>Flask</span><span>PostgreSQL</span></div>
-            <div class="project-highlights"><span>10 development phases</span><span>Chain of custody</span><span>Digital signatures</span><span>Audit & integrity</span><span>Backup & recovery</span></div>
-          </div>
-          <a class="project-link magnetic" href="https://github.com/1Y20ash/SecureCloudStorage" target="_blank" rel="noreferrer">View EVIDENTIA ↗</a>
-          <div class="spotlight-orb"></div>
+          <div class="project-main"><div class="project-kicker">FLAGSHIP PROJECT</div><h3>EVIDENTIA</h3><p>A case-centric Secure Digital Document Management System for legal and investigation-document workflows — evolved from encrypted cloud storage into a broader platform for protected documents, evidence, integrity, auditability and controlled access.</p><div class="tags"><span>AES-256-GCM</span><span>PBKDF2</span><span>Ed25519</span><span>RBAC</span><span>OCR</span><span>Flask</span><span>PostgreSQL</span></div><div class="project-highlights"><span>10 development phases</span><span>Chain of custody</span><span>Digital signatures</span><span>Audit & integrity</span><span>Backup & recovery</span></div></div>
+          <a class="project-link magnetic" href="https://github.com/1Y20ash/SecureCloudStorage" target="_blank" rel="noopener noreferrer">View EVIDENTIA ↗</a><div class="spotlight-orb"></div>
         </article>
-        <article class="project-card tilt-card" data-tilt><div class="project-meta"><span>02</span><span>AI / ML</span></div><div class="project-main"><h3>Cow & Buffalo Breed Recognition</h3><p>Image classification system using EfficientNetB0 and TensorFlow to recognize Indian bovine breeds.</p><div class="tags"><span>Python</span><span>TensorFlow</span><span>EfficientNetB0</span></div></div><a class="project-link magnetic" href="#contact">Details ↗</a></article>
-        <article class="project-card tilt-card" data-tilt><div class="project-meta"><span>03</span><span>WEB APP</span></div><div class="project-main"><h3>Farmers Community Forum</h3><p>A community platform designed to help farmers exchange knowledge and access AI-assisted content support.</p><div class="tags"><span>Flask</span><span>JavaScript</span><span>JSON</span></div></div><a class="project-link magnetic" href="#contact">Details ↗</a></article>
-        <article class="project-card tilt-card" data-tilt><div class="project-meta"><span>04</span><span>ECOMMERCE</span></div><div class="project-main"><h3>BioQuill</h3><p>An eco-friendly pen store with a modern frontend, Express backend and MySQL data layer.</p><div class="tags"><span>Node.js</span><span>Express</span><span>MySQL</span></div></div><a class="project-link magnetic" href="https://github.com/1Y20ash/BioQuill" target="_blank" rel="noreferrer">View project ↗</a></article>
-        <article class="project-card tilt-card" data-tilt><div class="project-meta"><span>05</span><span>DATABASE · WEB</span></div><div class="project-main"><h3>Car Rental System</h3><p>A database-driven rental application with Express APIs and MySQL persistence.</p><div class="tags"><span>Express</span><span>MySQL</span><span>REST API</span></div></div><a class="project-link magnetic" href="#contact">Details ↗</a></article>
-        <article class="project-card tilt-card" data-tilt><div class="project-meta"><span>06</span><span>C · GAME</span></div><div class="project-main"><h3>Star Defenders</h3><p>A retro arcade shooter featuring player controls, collisions, enemies, scoring and health mechanics.</p><div class="tags"><span>C</span><span>Turbo C</span><span>Graphics</span></div></div><a class="project-link magnetic" href="#contact">Details ↗</a></article>
+        <article class="project-card tilt-card" data-tilt><div class="project-meta"><span>02</span><span>AI / ML</span></div><div class="project-main"><h3>Cow & Buffalo Breed Recognition</h3><p>Image classification system using EfficientNetB0 and TensorFlow to recognize Indian bovine breeds.</p><div class="tags"><span>Python</span><span>TensorFlow</span><span>EfficientNetB0</span></div></div><a class="project-link magnetic" href="https://github.com/1Y20ash/Cow-and-buffalo-Recognition" target="_blank" rel="noopener noreferrer">View project ↗</a></article>
+        <article class="project-card tilt-card" data-tilt><div class="project-meta"><span>03</span><span>WEB APP</span></div><div class="project-main"><h3>Farmers Community Forum</h3><p>A community platform designed to help farmers exchange knowledge and access AI-assisted content support.</p><div class="tags"><span>Flask</span><span>JavaScript</span><span>JSON</span></div></div><a class="project-link magnetic" href="https://github.com/1Y20ash" target="_blank" rel="noopener noreferrer">GitHub ↗</a></article>
+        <article class="project-card tilt-card" data-tilt><div class="project-meta"><span>04</span><span>ECOMMERCE</span></div><div class="project-main"><h3>BioQuill</h3><p>An eco-friendly pen store with a modern frontend, Express backend and MySQL data layer.</p><div class="tags"><span>Node.js</span><span>Express</span><span>MySQL</span></div></div><a class="project-link magnetic" href="https://github.com/1Y20ash/BioQuill" target="_blank" rel="noopener noreferrer">View project ↗</a></article>
+        <article class="project-card tilt-card" data-tilt><div class="project-meta"><span>05</span><span>DATABASE · WEB</span></div><div class="project-main"><h3>Rentora</h3><p>A database-driven car rental application with Express APIs, authentication, rental workflows and MySQL persistence.</p><div class="tags"><span>Express</span><span>MySQL</span><span>REST API</span></div></div><a class="project-link magnetic" href="https://github.com/1Y20ash/Rentora" target="_blank" rel="noopener noreferrer">View project ↗</a></article>
+        <article class="project-card tilt-card" data-tilt><div class="project-meta"><span>06</span><span>AI · NLP</span></div><div class="project-main"><h3>Smartdoc</h3><p>AI-based document topic modeling and classification concept using NLP and LDA.</p><div class="tags"><span>Python</span><span>NLP</span><span>LDA</span></div></div><a class="project-link magnetic" href="https://github.com/1Y20ash/Smartdoc" target="_blank" rel="noopener noreferrer">View project ↗</a></article>
       </div>
     </section>
 
     <section class="section closing" id="contact">
-      <div class="section-label">04 / CONTACT</div><div class="contact-box tilt-card" data-tilt><p class="eyebrow">Have an idea?</p><h2>Let's make something<br /><em>worth building.</em></h2><a class="button button-primary magnetic" href="mailto:your.email@example.com">Start a conversation <span>↗</span></a></div>
+      <div class="section-label">04 / CONTACT</div><div class="contact-box tilt-card" data-tilt><p class="eyebrow">Have an idea?</p><h2>Let's make something<br /><em>worth building.</em></h2><a class="button button-primary magnetic" href="mailto:yashchitmalwar@gmail.com">Start a conversation <span>↗</span></a></div>
     </section>
   </main>
 
