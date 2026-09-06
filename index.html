@@ -18,6 +18,12 @@
     .photo-placeholder { overflow: hidden; }
     .photo-placeholder .profile-photo { position:absolute; inset:0; width:100%; height:100%; max-width:none; max-height:none; object-fit:cover; object-position:center center; display:block; z-index:1; border-radius:inherit; transform:scale(1.04); }
     .photo-placeholder .photo-ring { z-index:2; pointer-events:none; }
+    .project-actions { position:relative !important; z-index:5; display:flex !important; flex-wrap:wrap; align-items:center; gap:14px; margin-top:28px; }
+    .project-actions .project-link { position:relative !important; inset:auto !important; right:auto !important; bottom:auto !important; display:inline-flex !important; align-items:center; justify-content:center; width:auto !important; margin:0 !important; }
+    @media (max-width:600px) {
+      .project-actions { flex-direction:column; align-items:stretch; gap:10px; }
+      .project-actions .project-link { width:100% !important; }
+    }
   </style>
 </head>
 <body>
@@ -70,7 +76,7 @@
         <article class="project-card featured tilt-card spotlight-card" data-tilt>
           <div class="project-meta"><span>01</span><span>SECURITY · DIGITAL FORENSICS · FULL STACK</span></div>
           <div class="project-main"><div class="project-kicker">FLAGSHIP PROJECT</div><h3>EVIDENTIA</h3><p>A case-centric secure digital document management system for legal and investigation workflows, evolved from SecureCloudStorage into a broader platform for protected documents, evidence integrity, auditability and controlled access.</p><div class="tags"><span>AES-256-GCM</span><span>PBKDF2</span><span>Ed25519</span><span>RBAC</span><span>OCR</span><span>Flask</span><span>PostgreSQL</span></div><div class="project-highlights"><span>10 development phases</span><span>Chain of custody</span><span>Digital signatures</span><span>Audit & integrity</span><span>Backup & recovery</span></div></div>
-          <div class="project-actions"><a class="project-link magnetic" href="https://evidentia.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo ↗</a><a class="project-link magnetic project-link-secondary" href="https://github.com/1Y20ash/SecureCloudStorage" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div><div class="spotlight-orb"></div>
+          <div class="project-actions"><a class="project-link magnetic" href="https://secure-cloud-storage-nine.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo ↗</a><a class="project-link magnetic project-link-secondary" href="https://github.com/1Y20ash/SecureCloudStorage" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div><div class="spotlight-orb"></div>
         </article>
         <article class="project-card tilt-card" data-tilt><div class="project-meta"><span>02</span><span>AI / ML</span></div><div class="project-main"><h3>Cow & Buffalo Breed Recognition</h3><p>Computer-vision classification project trained on an Indian bovine-breed dataset to recognize cow and buffalo breeds using an EfficientNetB0-based model.</p><div class="tags"><span>Python</span><span>TensorFlow</span><span>EfficientNetB0</span><span>Computer Vision</span></div></div><a class="project-link magnetic" href="https://github.com/1Y20ash/Cow-and-buffalo-Recognition" target="_blank" rel="noopener noreferrer">View project ↗</a></article>
         <article class="project-card tilt-card" data-tilt><div class="project-meta"><span>03</span><span>WEB APP</span></div><div class="project-main"><h3>Farmers Community Forum</h3><p>A community-focused web project designed to help farmers share knowledge, discuss practical topics and access useful information.</p><div class="tags"><span>Flask</span><span>JavaScript</span><span>JSON</span></div></div><a class="project-link magnetic" href="https://github.com/1Y20ash" target="_blank" rel="noopener noreferrer">GitHub ↗</a></article>
