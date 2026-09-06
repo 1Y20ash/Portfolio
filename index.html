@@ -3,34 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Yash Chitmalwar — Artificial Intelligence & Machine Learning student building practical AI/ML and software projects." />
+  <meta name="description" content="Yash Chitmalwar — CSE (AIML) student building practical AI/ML, full-stack and cybersecurity projects." />
   <meta name="author" content="Yash Chitmalwar" />
   <meta name="theme-color" content="#0b0b0d" />
-  <meta property="og:title" content="Yash Chitmalwar — AI & ML Portfolio" />
-  <meta property="og:description" content="AI/ML projects, practical experience and software work by Yash Chitmalwar." />
+  <meta property="og:title" content="Yash Chitmalwar — Portfolio" />
+  <meta property="og:description" content="AI/ML, full-stack development and cybersecurity projects by Yash Chitmalwar." />
   <meta property="og:type" content="website" />
-  <title>Yash Chitmalwar — AI & ML | Portfolio</title>
+  <title>Yash Chitmalwar — CSE (AIML) | Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="profile-effects.css" />
   <style>
     .photo-placeholder { overflow: hidden; }
-    .photo-placeholder .profile-photo { position:absolute; inset:0; width:100%; height:100%; max-width:none; max-height:none; object-fit:cover; object-position:center center; display:block; z-index:1; border-radius:inherit; transform:scale(1.04); }
-    .photo-placeholder .photo-ring { z-index:2; pointer-events:none; }
+    .photo-placeholder .profile-photo { position:absolute; inset:0; width:100%; height:100%; max-width:none; max-height:none; object-fit:cover; object-position:center center; display:block; z-index:2; border-radius:inherit; transform:scale(1.04); }
+    .photo-placeholder .photo-ring { z-index:4; pointer-events:none; }
     .project-actions { position:relative !important; z-index:5; display:flex !important; flex-wrap:wrap; align-items:center; gap:14px; margin-top:28px; }
     .project-actions .project-link { position:relative !important; inset:auto !important; right:auto !important; bottom:auto !important; display:inline-flex !important; align-items:center; justify-content:center; width:auto !important; margin:0 !important; }
-    .resume-contact { display:flex; flex-wrap:wrap; gap:14px; margin-top:28px; }
-    .resume-contact a { color:inherit; }
-    .education-card { margin-top:32px; }
-    .education-card h3 { margin-bottom:8px; }
-    .education-meta { opacity:.7; margin-bottom:18px; }
-    .language-list { display:flex; flex-wrap:wrap; gap:10px; margin-top:20px; }
-    .language-list span { border:1px solid rgba(255,255,255,.14); padding:8px 12px; border-radius:999px; }
     @media (max-width:600px) {
       .project-actions { flex-direction:column; align-items:stretch; gap:10px; }
       .project-actions .project-link { width:100% !important; }
-      .resume-contact { flex-direction:column; align-items:stretch; }
     }
   </style>
 </head>
@@ -42,7 +35,7 @@
   <header class="site-header">
     <a class="brand" href="#home" aria-label="Yash Chitmalwar home"><span>Y</span>YASH<span class="brand-dot">.</span></a>
     <nav class="nav" aria-label="Primary navigation">
-      <a href="#about">About</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
     </nav>
     <a class="nav-cta magnetic" href="#contact">Let's talk <span>↗</span></a>
   </header>
@@ -50,55 +43,45 @@
   <main>
     <section class="hero section" id="home">
       <div class="hero-copy">
-        <p class="eyebrow hero-reveal"><span class="status-dot"></span> AI & MACHINE LEARNING STUDENT • PYTHON • FLASK • ML</p>
+        <p class="eyebrow hero-reveal"><span class="status-dot"></span> CSE (AIML) • AI/ML • Full Stack • Cybersecurity</p>
         <h1 class="hero-reveal">Building <em>useful</em><br />things with code.</h1>
-        <p class="hero-text hero-reveal">I'm Yash, an Artificial Intelligence & Machine Learning student with hands-on experience building and deploying machine learning models and practical software projects.</p>
+        <p class="hero-text hero-reveal">I'm Yash, a Computer Science & Engineering student who learns by building practical software across artificial intelligence, full-stack development, databases and cybersecurity.</p>
         <div class="hero-actions hero-reveal"><a class="button button-primary magnetic" href="#projects">Explore my work <span>↓</span></a><a class="button button-ghost magnetic" href="#contact">Get in touch <span>↗</span></a></div>
       </div>
       <div class="hero-visual tilt-card hero-reveal" data-tilt>
         <div class="hero-grid"></div><div class="scan-line"></div>
-        <div class="photo-placeholder"><div class="photo-ring"></div><img class="profile-photo" src="IMG-20260120-WA0002.jpg" alt="Portrait of Yash Chitmalwar" /></div>
-        <div class="hero-chip chip-one float-chip">AI / ML</div><div class="hero-chip chip-two float-chip">PYTHON</div><div class="hero-chip chip-three float-chip">FLASK</div>
+        <div class="photo-placeholder"><div class="photo-ring"></div><img class="profile-photo" src="1785158951877.png" alt="Professional portrait of Yash Chitmalwar" /></div>
+        <div class="hero-chip chip-one float-chip">AI / ML</div><div class="hero-chip chip-two float-chip">SECURITY</div><div class="hero-chip chip-three float-chip">FULL STACK</div>
         <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
       </div>
     </section>
 
     <section class="section about" id="about">
-      <div class="section-label">01 / PROFILE</div>
-      <div class="about-grid"><h2>Curious by nature.<br /><span>Hands-on by choice.</span></h2><div><p>Motivated AI & Machine Learning student with hands-on experience in building and deploying machine learning models.</p><p>Experienced in data preprocessing, augmentation, and using AI tools for research and documentation. Interested in applying AI to real-world problem domains.</p><div class="resume-contact"><a class="text-link magnetic" href="mailto:yashchitmalwar@gmail.com">yashchitmalwar@gmail.com <span>↗</span></a><a class="text-link magnetic" href="tel:+918010622341">+91 8010622341 <span>↗</span></a></div></div></div>
+      <div class="section-label">01 / ABOUT</div>
+      <div class="about-grid"><h2>Curious by nature.<br /><span>Hands-on by choice.</span></h2><div><p>I'm a CSE (AIML) student focused on turning what I learn into working projects — from computer-vision models and web applications to secure document workflows.</p><p>I enjoy the full journey: understanding the problem, designing the solution, writing the code, connecting the data layer and improving the result through iteration.</p><a class="text-link magnetic" href="#projects">See what I've built <span>→</span></a></div></div>
     </section>
 
     <section class="section" id="skills">
-      <div class="section-label">02 / SKILLS</div><div class="section-heading"><h2>Skills that <span>ship.</span></h2><p>A practical toolkit developed through coursework, experimentation and project work.</p></div>
+      <div class="section-label">02 / TOOLKIT</div><div class="section-heading"><h2>Skills that <span>ship.</span></h2><p>A practical toolkit built through coursework, experimentation and project work.</p></div>
       <div class="skills-grid">
-        <article class="skill-card tilt-card" data-tilt><div class="skill-number">01</div><h3>Programming</h3><p>Python · C Programming · Graphics Programming</p><span class="card-arrow">↗</span><div class="skill-line"><i></i></div></article>
-        <article class="skill-card tilt-card" data-tilt><div class="skill-number">02</div><h3>AI / ML</h3><p>Machine Learning · Data Preprocessing · Data Augmentation · TensorFlow · Keras · CNN</p><span class="card-arrow">↗</span><div class="skill-line"><i></i></div></article>
-        <article class="skill-card tilt-card" data-tilt><div class="skill-number">03</div><h3>Development</h3><p>Flask (Basic) · HTML · CSS · JavaScript · Git & GitHub</p><span class="card-arrow">↗</span><div class="skill-line"><i></i></div></article>
-        <article class="skill-card tilt-card" data-tilt><div class="skill-number">04</div><h3>Deployment & AI Tools</h3><p>Render (Deployment) · AI tools · LLMs · ChatGPT for debugging, research and documentation</p><span class="card-arrow">↗</span><div class="skill-line"><i></i></div></article>
+        <article class="skill-card tilt-card" data-tilt><div class="skill-number">01</div><h3>AI / ML</h3><p>Python · TensorFlow · Keras · EfficientNetB0 · Computer Vision</p><span class="card-arrow">↗</span><div class="skill-line"><i></i></div></article>
+        <article class="skill-card tilt-card" data-tilt><div class="skill-number">02</div><h3>Development</h3><p>HTML · CSS · JavaScript · Flask · Node.js · Express</p><span class="card-arrow">↗</span><div class="skill-line"><i></i></div></article>
+        <article class="skill-card tilt-card" data-tilt><div class="skill-number">03</div><h3>Data & DB</h3><p>MySQL · PostgreSQL · SQLAlchemy · REST APIs · JSON</p><span class="card-arrow">↗</span><div class="skill-line"><i></i></div></article>
+        <article class="skill-card tilt-card" data-tilt><div class="skill-number">04</div><h3>Security</h3><p>AES-256-GCM · PBKDF2-HMAC-SHA256 · Ed25519 · SHA-256 · RBAC</p><span class="card-arrow">↗</span><div class="skill-line"><i></i></div></article>
       </div>
     </section>
 
-    <section class="section" id="education">
-      <div class="section-label">03 / EDUCATION</div><div class="section-heading"><h2>Learning with <span>purpose.</span></h2><p>Building a strong foundation in computer science with a focus on artificial intelligence and machine learning.</p></div>
-      <article class="project-card education-card tilt-card" data-tilt>
-        <div class="project-meta"><span>2024 — PRESENT</span><span>B.TECH</span></div>
-        <div class="project-main"><h3>B.Tech Computer Science & Engineering</h3><p>Artificial Intelligence and Machine Learning</p><p class="education-meta">S.B. Jain Institute of Technology, Management and Research · Nagpur</p></div>
-      </article>
-      <div class="section-heading" style="margin-top:48px"><h2>Languages I <span>speak.</span></h2></div>
-      <div class="language-list"><span>English</span><span>Hindi</span><span>Marathi</span></div>
-    </section>
-
     <section class="section projects" id="projects">
-      <div class="section-label">04 / PROJECTS & PRACTICAL EXPERIENCE</div><div class="section-heading"><h2>Projects with <span>purpose.</span></h2><p>Hands-on work spanning machine learning, web applications and graphics programming.</p></div>
+      <div class="section-label">03 / SELECTED WORK</div><div class="section-heading"><h2>Projects with <span>purpose.</span></h2><p>Projects that show how I apply AI, software engineering, databases and security to practical problems.</p></div>
       <div class="project-list">
         <article class="project-card featured tilt-card spotlight-card" data-tilt>
           <div class="project-meta"><span>01</span><span>SECURITY · DIGITAL FORENSICS · FULL STACK</span></div>
           <div class="project-main"><div class="project-kicker">FLAGSHIP PROJECT</div><h3>EVIDENTIA</h3><p>A case-centric secure digital document management system for legal and investigation workflows, evolved from SecureCloudStorage into a broader platform for protected documents, evidence integrity, auditability and controlled access.</p><div class="tags"><span>AES-256-GCM</span><span>PBKDF2</span><span>Ed25519</span><span>RBAC</span><span>OCR</span><span>Flask</span><span>PostgreSQL</span></div><div class="project-highlights"><span>10 development phases</span><span>Chain of custody</span><span>Digital signatures</span><span>Audit & integrity</span><span>Backup & recovery</span></div></div>
           <div class="project-actions"><a class="project-link magnetic" href="https://secure-cloud-storage-nine.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo ↗</a><a class="project-link magnetic project-link-secondary" href="https://github.com/1Y20ash/SecureCloudStorage" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div><div class="spotlight-orb"></div>
         </article>
-        <article class="project-card tilt-card" data-tilt><div class="project-meta"><span>02</span><span>AI PROJECT · 2024 — PRESENT</span></div><div class="project-main"><h3>Cow and Cattle Breed Recognition System</h3><p>Designed and trained a CNN-based machine learning model for image classification using TensorFlow and Keras. Performed data preprocessing, labeling and augmentation on image datasets, documented model architecture and experiments, and deployed the trained model through a Flask-based web application for real-time predictions.</p><div class="tags"><span>Python</span><span>TensorFlow</span><span>Keras</span><span>CNN</span><span>Data Augmentation</span><span>Flask</span></div></div><a class="project-link magnetic" href="https://github.com/1Y20ash/Cow-and-buffalo-Recognition" target="_blank" rel="noopener noreferrer">View project ↗</a></article>
-        <article class="project-card tilt-card" data-tilt><div class="project-meta"><span>03</span><span>WEB APPLICATION · COPYRIGHT REGISTERED</span></div><div class="project-main"><h3>Farmers Community Forum</h3><p>Developed a community platform for farmers to share queries and information. Implemented backend functionality using Flask with structured JSON-based data storage. Used LLMs such as ChatGPT to assist with content generation, summarization and user query support.</p><div class="tags"><span>Flask</span><span>JSON</span><span>JavaScript</span><span>LLM</span></div></div><div class="project-actions"><a class="project-link magnetic" href="https://community-forum-16th.onrender.com/" target="_blank" rel="noopener noreferrer">Live Demo ↗</a><a class="project-link magnetic project-link-secondary" href="https://github.com/1Y20ash" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></article>
-        <article class="project-card tilt-card" data-tilt><div class="project-meta"><span>04</span><span>GAME · C PROGRAMMING</span></div><div class="project-main"><h3>Star Defenders — Retro 2D Shooting Game</h3><p>Developed a retro 2D arcade-style shooting game from scratch using C programming and Turbo C (BGI graphics), without modern game engines. Implemented player controls, bullet firing, real-time collision detection, multiple enemy types, difficulty scaling, health, scoring, respawn logic, a custom game loop and struct-based object management.</p><div class="tags"><span>C Programming</span><span>Turbo C</span><span>BGI Graphics</span><span>Game Loop</span></div></div><a class="project-link magnetic" href="https://github.com/1Y20ash" target="_blank" rel="noopener noreferrer">GitHub ↗</a></article>
+        <article class="project-card tilt-card" data-tilt><div class="project-meta"><span>02</span><span>AI / ML</span></div><div class="project-main"><h3>Cow & Buffalo Breed Recognition</h3><p>Computer-vision classification project trained on an Indian bovine-breed dataset to recognize cow and buffalo breeds using an EfficientNetB0-based model.</p><div class="tags"><span>Python</span><span>TensorFlow</span><span>EfficientNetB0</span><span>Computer Vision</span></div></div><a class="project-link magnetic" href="https://github.com/1Y20ash/Cow-and-buffalo-Recognition" target="_blank" rel="noopener noreferrer">View project ↗</a></article>
+        <article class="project-card tilt-card" data-tilt><div class="project-meta"><span>03</span><span>WEB APP</span></div><div class="project-main"><h3>Farmers Community Forum</h3><p>A community-focused web project designed to help farmers share knowledge, discuss practical topics and access useful information.</p><div class="tags"><span>Flask</span><span>JavaScript</span><span>JSON</span></div></div><a class="project-link magnetic" href="https://community-forum-16th.onrender.com/" target="_blank" rel="noopener noreferrer">Live Demo ↗</a></article>
+        <article class="project-card tilt-card" data-tilt><div class="project-meta"><span>04</span><span>GAME DEVELOPMENT</span></div><div class="project-main"><h3>Star Defenders</h3><p>A retro 2D arcade-style shooting game built from scratch in C using Turbo C and BGI graphics, with player controls, bullets, collisions, enemies, health, scoring and respawn logic.</p><div class="tags"><span>C Programming</span><span>Turbo C</span><span>BGI Graphics</span><span>Game Loop</span></div></div></article>
         <article class="project-card tilt-card" data-tilt><div class="project-meta"><span>05</span><span>ECOMMERCE</span></div><div class="project-main"><h3>BioQuill</h3><p>A full-stack eco-friendly pen store combining a responsive frontend, Express APIs, user authentication and a MySQL-backed product layer.</p><div class="tags"><span>Node.js</span><span>Express</span><span>MySQL</span><span>REST API</span></div></div><a class="project-link magnetic" href="https://github.com/1Y20ash/BioQuill" target="_blank" rel="noopener noreferrer">View project ↗</a></article>
         <article class="project-card tilt-card" data-tilt><div class="project-meta"><span>06</span><span>DATABASE · WEB</span></div><div class="project-main"><h3>Rentora</h3><p>A database-driven car rental system with Express APIs, bcrypt authentication, car availability, rental workflows, payments and MySQL persistence.</p><div class="tags"><span>Express</span><span>MySQL</span><span>REST API</span><span>bcrypt</span></div></div><a class="project-link magnetic" href="https://github.com/1Y20ash/Rentora" target="_blank" rel="noopener noreferrer">View project ↗</a></article>
         <article class="project-card tilt-card" data-tilt><div class="project-meta"><span>07</span><span>AI · NLP</span></div><div class="project-main"><h3>Smartdoc</h3><p>An AI/NLP project concept focused on document topic modeling and classification, using Latent Dirichlet Allocation (LDA) to discover themes in text.</p><div class="tags"><span>Python</span><span>NLP</span><span>LDA</span><span>Topic Modeling</span></div></div><a class="project-link magnetic" href="https://github.com/1Y20ash/Smartdoc" target="_blank" rel="noopener noreferrer">View project ↗</a></article>
@@ -106,11 +89,11 @@
     </section>
 
     <section class="section closing" id="contact">
-      <div class="section-label">05 / CONTACT</div><div class="contact-box tilt-card" data-tilt><p class="eyebrow">Have an idea or opportunity?</p><h2>Let's make something<br /><em>worth building.</em></h2><div class="resume-contact"><a class="button button-primary magnetic" href="mailto:yashchitmalwar@gmail.com">Email me <span>↗</span></a><a class="button button-ghost magnetic" href="https://www.linkedin.com/in/1y2ash" target="_blank" rel="noopener noreferrer">LinkedIn <span>↗</span></a></div><p class="hero-text" style="margin-top:24px">Nagpur, Maharashtra · +91 8010622341 · English · Hindi · Marathi</p></div>
+      <div class="section-label">04 / CONTACT</div><div class="contact-box tilt-card" data-tilt><p class="eyebrow">Have an idea or opportunity?</p><h2>Let's make something<br /><em>worth building.</em></h2><a class="button button-primary magnetic" href="mailto:yashchitmalwar@gmail.com">Start a conversation <span>↗</span></a></div>
     </section>
   </main>
 
-  <footer><span>© 2026 Yash Chitmalwar</span><span>AI & ML · Built with curiosity & code.</span></footer>
+  <footer><span>© 2026 Yash Chitmalwar</span><span>CSE (AIML) · Built with curiosity & code.</span></footer>
   <script src="script.js"></script>
 </body>
 </html>
