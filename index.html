@@ -11,7 +11,20 @@
   <link rel="stylesheet" href="style.css" />
   <style>
     .photo-placeholder { overflow: hidden; }
-    .photo-placeholder .profile-photo { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; position: relative; z-index: 1; }
+    .photo-placeholder .profile-photo {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      max-width: none;
+      max-height: none;
+      object-fit: cover;
+      object-position: center center;
+      display: block;
+      z-index: 1;
+      border-radius: inherit;
+      transform: scale(1.04);
+    }
     .photo-placeholder .photo-ring { z-index: 2; pointer-events: none; }
   </style>
 </head>
